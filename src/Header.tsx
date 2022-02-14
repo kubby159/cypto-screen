@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 const Container = styled.div`
   max-width: 480px;
-  padding: 0 20px;
   margin: 0 auto;
-  background-color: beige;
+  background-color: transparent;
+  font-size: 18px;
 `;
 
 const HeaderBar = styled.div`
@@ -34,7 +34,7 @@ const Notice = styled.span`
 `;
 
 const Layout = styled.div`
-  width: 100px;
+  width: 260px;
   background: yellow;
 `;
 

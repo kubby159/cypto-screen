@@ -12,14 +12,14 @@ const Container = styled.div`
 `;
 
 const MainLeft = styled.div`
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 `;
 
 const PortfolioValue = styled.span`
-  color: gray;
+  color: #858e96;
 `;
 
 const CurrentValue = styled.span`
@@ -32,7 +32,7 @@ const AmountOfChange = styled.span`
   font-size: 12px;
   position: absolute;
   top: -5px;
-  right: 42%;
+  right: 50%;
   color: #3eff94;
 `;
 
@@ -43,7 +43,7 @@ const DepositBtn = styled.button`
   margin-right: 8px;
   border: none;
   border-radius: 8px;
-  background: #00fb9a;
+  background: #35b596;
   color: #fff;
 `;
 const WithdrawBtn = styled.button`
@@ -55,9 +55,34 @@ const WithdrawBtn = styled.button`
 `;
 
 const MainRight = styled.div`
-  width: 20%;
-  background: yellow;
+  width: 15%;
+  background: #fff;
+  padding: 12px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 24px;
 `;
+
+const MainRightIconBtc = styled.span`
+  border: 1px solid transparent;
+  padding: 6px 8px;
+  border-radius: 50%;
+  &:hover {
+    background-color: lightgray;
+  }
+`;
+const MainRightIconEth = styled.span`
+  border: 1px solid transparent;
+  padding: 8px 12px;
+  border-radius: 50%;
+  &:hover {
+    background-color: lightgray;
+  }
+`;
+const MainRightIconStx = styled.span``;
 
 const MainScreen = () => {
   return (
@@ -74,7 +99,14 @@ const MainScreen = () => {
             <WithdrawBtn>Withdraw</WithdrawBtn>
           </BtnBox>
         </MainLeft>
-        <MainRight>hello</MainRight>
+        <MainRight>
+          <MainRightIconBtc>
+            <i className="fab fa-bitcoin"></i>
+          </MainRightIconBtc>
+          <MainRightIconEth>
+            <i className="fab fa-ethereum"></i>
+          </MainRightIconEth>
+        </MainRight>
       </Container>
     </>
   );
