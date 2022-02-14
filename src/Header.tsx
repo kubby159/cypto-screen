@@ -47,7 +47,6 @@ const Header = () => {
             <i className="fab fa-hive"></i>
             <Title>Alex Julia</Title>
           </Logo>
-
           <Layout></Layout>
           <RightBox>
             <Search>
